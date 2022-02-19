@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    <link rel="stylesheet" , href="index.css">
+    <link rel="stylesheet" , href="transfer.css">
+</head>
+<header>
+</header>
+
+<body>
+    <div class="UpperTitle">
+        INDIA'S BANK
+    </div>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li><a class="nav-items" href="transaction.php"> Transaction History </a></li>
+            <li><a class="nav-items" href="transfer.html"> Transfer Money </a></li>
+            <li><a class="nav-items" href="customer1.php"> View Customers </a></li>
+            <li><a class="nav-items" href="index.html"> Home </a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Transfer money in few clicks! </h1>
+        <h3>Please enter the details</h3><br>
+        <div class="container-left">
+            <div class="form">
+                <form action="transfer.php" method="post">
+                    <!-- Transfer from(Sender's name)<br> -->
+                    <input type="text" , name="sender_account" , placeholder="Sender's account number"><br>
+                    <!-- Transfer to(Receiver's name)<br> -->
+                    <input type="text" , name="receiver_name" , placeholder="Receiver's name"><br>
+                    <!-- Receiver's account number<br> -->
+                    <input type="text" , name="receiver_account" , placeholder="Receiver's account number"><br>
+                    <!-- Amount<br> -->
+                    <input type="text" , name="amount" , placeholder="Amount"><br><br>
+                    <button class="btn" onclick="transfer.php">Transfer</button>
+                    <!-- <button class="btn", onclick="alert('Transaction cancelled')">Cancel</button> -->
+                </form>
+            </div>
+        </div>
+        <div class="container-right">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy NBI </p>
+        <a href="mailto:nbi@customercare.com">nbi@customercare.com</a>
+    </footer>
+</body>
+
+</html>
